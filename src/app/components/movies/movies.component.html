@@ -1,14 +1,54 @@
-<div class="app">
-    <h1>Listado de Peliculas</h1>
 
+<div class="cajaArriba">
+  <div class="img-container">
+    <img src="../movies/../../../assets/carrete.png" alt="logo img">
+  </div>
+  <h1>BuscaMovies</h1>
+</div>
+<div class="app">
+    <!-- <h2>Busca tu película favorita</h2> -->
+    <p>¡La película perfecta está a solo un 'click' de distancia en ©️BuscaMovies
+        ¿No sabes qué ver o simplemente deseas explorar películas nuevas? Con nuestra 
+        plataforma intuitiva, encontrarás la película ideal en cuestión de segundos. Simplemente dale a la lupa
+        y comienza tu búsqueda cinematográfica. Desde éxitos de taquilla hasta joyas ocultas, estamos aquí para 
+        hacerte la vida más fácil y divertida.
+        ¡Únete a la comunidad de amantes del cine en BuscaMovie y comienza tu viaje cinematográfico ahora!</p>
     <div class="search">
-        <input type="text" #search placeholder="Buscar pelicula" > 
-        <img (click)="getMovies(search.value)"  src="../../../assets/search.svg" alt="search">
+        <input type="text" #search placeholder="Buscar pelicula" class="text-search"> 
+        <img (click)="getMovies(search.value)"  src="../../../assets/search.svg" alt="search" class="lupa">
     </div>
     <div *ngIf="movies.length > 0;else empty" class="container">
         <app-card-movie *ngFor="let movie of movies"[movie]="movie" ></app-card-movie>
     </div>
     <ng-template #empty class="empty">
-        <h3>No se encontraron películas </h3>
+        <h5>No se encontraron películas </h5>
     </ng-template>
+</div>
+<div>
+    <footer>
+        <ul>
+            <li>
+              <a href="https://github.com/Gabi-Garcia"  target="_blank">
+                <div class="imgFooter">
+                  <img src="../movies/../../../assets/github.png" alt="Github-img">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/gabriel-garcia-ab029b210/" target="_blank">
+                <div class="imgFooter">
+                  <img src="../movies/../../../assets/linkedin.png" alt="Linkedin-img">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:gabriel.garcia.development@gmail.com">
+                <div class="imgFooter">
+                  <img src="../movies/../../../assets/email.png" alt="email-img">
+                </div>
+              </a>
+            </li>      
+          </ul>
+          <p>©️Creado por Gabi-Garcia</p>
+    </footer>
 </div>
