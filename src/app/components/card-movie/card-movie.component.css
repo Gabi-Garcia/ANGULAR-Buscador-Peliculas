@@ -1,0 +1,155 @@
+/**********************************************************************************************/
+/*************************************MEDIA QUERY: MOBILE HASTA 767px****************************/
+/*********************************************************************************************/
+@media screen and (min-width:320px) and (max-width:767px){
+  .container {
+    width: 100%;
+    margin: auto;
+    margin-top:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid violet;
+  }
+    .movie {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        border: none;
+        /* transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1); */
+        box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+        margin: auto;
+        margin-top: 20px;
+        border: 1px solid yellow;
+      }
+      .movie:hover {
+        box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+        transform: scale(1.05, 1.05);
+        /* margin: auto; */
+      }
+      .movie div:nth-of-type(1) { 
+        position: absolute;
+        padding: 16px;
+        width: 100%;
+        opacity: 0;
+        top: 0;
+        color: #f9d3b4;
+      }
+      .movie:hover div:nth-of-type(1) {
+        opacity: 2;
+      }
+      .movie div:nth-of-type(2) {
+        width: 100%;
+        height: 100%;
+      }
+      .movie div:nth-of-type(2) img {
+        height: 100%;
+        width: 100%;
+      }
+      .movie:hover div:nth-of-type(2) {
+        height: 100%;
+        opacity: 0.3;
+      }
+      .movie div:nth-of-type(3) {
+        z-index: 2;
+        background-color: #343739;
+        padding:10px 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        /* border: 1px solid red; */
+      }
+      .movie div:nth-of-type(3) span {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: #f0f0f0;
+      }
+      .movie div:nth-of-type(3) h3 {
+        margin-top: 5px;
+        font-family: "Roboto Slab", serif;
+        color: #f9d3b4;
+      }
+      .movie:hover div:nth-of-type(3) {
+        background-color: transparent;
+      }
+}
+
+/**********************************************************************************************/
+/*************************************MEDIA QUERY: TABLET Y DESKTOP HASTA 1500px****************************/
+/*********************************************************************************************/
+@media screen and (min-width:768px) and (max-width:1500px){
+.movie {
+    width: 315px;
+    height: 460px;
+    margin: 1.5rem;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    /* transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1); */
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid yellow; */
+  }
+  .movie:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+    /* margin: auto; */
+  }
+  .movie div:nth-of-type(1) { 
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    color: #f9d3b4;
+  }
+  .movie:hover div:nth-of-type(1) {
+    opacity: 2;
+  }
+  .movie div:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+  }
+  .movie div:nth-of-type(2) img {
+    height: 100%;
+    width: 100%;
+  }
+  .movie:hover div:nth-of-type(2) {
+    height: 100%;
+    opacity: 0.3;
+  }
+  .movie div:nth-of-type(3) {
+    z-index: 2;
+    background-color: #343739;
+    padding: 16px 24px 24px 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .movie div:nth-of-type(3) span {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+  .movie div:nth-of-type(3) h3 {
+    margin-top: 5px;
+    font-family: "Roboto Slab", serif;
+    color: #f9d3b4;
+  }
+  .movie:hover div:nth-of-type(3) {
+    background-color: transparent;
+  }
+}
+  

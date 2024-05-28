@@ -6,8 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientJsonpModule, HttpClientModule } from '@angular/common/http'
 
 
-
-
 //COMPONENTES
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './components/movies/movies.component';
@@ -20,7 +18,7 @@ import { CardMovieComponent } from './components/card-movie/card-movie.component
     CardMovieComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     HttpClientModule
   ],
   providers: [],
