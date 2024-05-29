@@ -15,7 +15,7 @@
   }
     .movie {
         width: 100%;
-        height: 40%;
+        height: 320px;
         position: relative;
         border-radius: 12px;
         overflow: hidden;
@@ -24,7 +24,7 @@
         box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
         margin: auto;
         margin-top: 20px;
-        border: 1px solid yellow;
+        /* border: 1px solid yellow; */
       }
       .movie:hover {
         box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
